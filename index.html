@@ -2,209 +2,354 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome to Pradip's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="./main.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- =====BOX ICONS===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
+
+  <title>Pradip Babar</title>
 </head>
 
 <body>
-    <div class="hero">
-        <h1>Pradip's Portfolio</h1>
-        <h2>Take a step into my world!</h2>
-    </div>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Pradip</a>
+      </div>
 
-    <div class="container">
-        <header>
-            <nav>
-                <a href="#home" class="button">Home</a>
-                <a href="#about" class="button">About</a>
-                <a href="#projects" class="button">Projects</a>
-                <a href="#expertise" class="button">Expertise</a>
-                <a href="#contact" class="button">Contact</a>
-                <a href="Pradip's Resume.pdf" download class="download-button">Download</a>
-            </nav>
-        </header>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
 
-        <section id="home">
-            <main role="main">
-                <h3>Professional Summary</h3>
-                <p>As a DevOps Engineer with 1 year 7+ months of experience, I have a strong understanding of the principles
-                    and best practices of DevOps. My experience includes working with various tools such as Docker,
-                    Docker-Compose, Terraform, GitHub Actions, Git, GitHub, Go, Python, K8s, and AWS. I am actively seeking new
-                    opportunities to apply my expertise in areas such as cloud infrastructure, containerization,
-                    automation, and CI/CD.</p>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
 
-                <h3>Areas of Expertise</h3>
-				<ul class="expertise-list">
-					<li>Cloud Infrastructure (AWS)</li>
-					<li>Containerization (Docker, Kubernetes)</li>
-					<li>Infrastructure as Code (Terraform)</li>
-					<li>Continuous Integration/Continuous Deployment (CI/CD)</li>
-					<li>Version Control (Git, GitHub)</li>
-					<li>Programming Languages (Go, Python)</li>
-					<li>DevOps Tools (Jenkins, Ansible)</li>
-					<li>Scripting Languages (Groovy, Bash, HCL, YML)</li>
-					<li>Operating Systems (Windows 10, Linux)</li>
-					<li>Soft Skills (Problem Solving, Adaptability, Time Management, Team Building)</li>
-				</ul>
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          Hi,<br />I'm <span class="home__title-color">Pradip</span><br />
+          <span class="animated-title"></span>
+        </h1>
 
-                <h3>Education</h3>
-                <p><b>DR.D.Y.PATIL A.C.S. College</b>, Pimpri, Pune
-                    <br><b>Programming Coursework:</b> Advanced Python Programming, Multimedia Web Design
-                    <br><b>Technical Skills:</b> HTML/CSS, Python, SQL, db2, rpgle, bash, shell, groovy, HCL, JSON
-                    <br><b>Software:</b> Git/GitHub, AS400, Jenkins, GitHub-Action, Terraform, Docker, Maven
-                </p>
+        <a href="assets/resume/PradipBabar_CV.pdf" class="button" download="Pradip_Babar_Resume.pdf">Download <i
+            class="bx bxs-download"></i></a>
+      </div>
 
-                <h3>Professional Experience</h3>
-                <p><b>Associate Technical Support</b> (18th May 2022)<br>
-                    Persistent Systems, Pune, India</p>
-                <ul>
-                    <li>Started my career at Persistent on May 18th and progressed to the position of Technical Support Engineer
-                    </li>
-                    <li>As a Technical Support professional with experience in DevOps at Persistent Systems, developed expertise
-                        in various tools and technologies including Docker, Docker Compose, Terraform, GitHub Actions, and AWS.
-                    </li>
-                    <li>Worked with Docker to create and manage containerized environments for applications.</li>
-                    <li>Used Docker Compose for container orchestration and managing multi-container applications.</li>
-                    <li>Experience with Terraform includes infrastructure as code (IAC) and automating deployment and management
-                        of infrastructure resources in a cloud environment.</li>
-                    <li>Worked with GitHub Actions to automate software development workflows and enable continuous integration and
-                        continuous deployment (CI/CD).</li>
-                    <li>Experience with AWS, including services like EC2, S3, RDS, CloudFront, and more.</li>
-                </ul>
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/pradip-babar-7ab00b1a1/" class="home__social-icon"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Pradipbabar" class="home__social-icon"><i class="bx bxl-github"></i></a>
+      </div>
 
-                <h3>Certification</h3>
-                <p>AWS Solutions Architect Associate</p>
+      <div class="home__img">
+        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <mask id="mask0" mask-type="alpha">
+            <path
+              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+          </mask>
+          <g mask="url(#mask0)">
+            <path
+              d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+            <image class="home__blob-img" x="35" y="5" href="assets/img/perfil.png" />
+          </g>
+        </svg>
+      </div>
+    </section>
 
-                <h3>Personal Projects</h3>
-				<ul class="projects-list">
-					<li>
-						<h4><a href="https://github.com/Pradipbabar/java-devops"> Automated Deployment with GitHub-Action and Docker </a></h4>
-						<p>
-							Collaborated on a team to establish a Docker-based automated deployment pipeline with Maven and Sonar Cloud integration.
-						</p>
-						<ul>
-							<li>Build and test using Maven</li>
-							<li>Build Docker images for web frontend, RESTful API, and database</li>
-							<li>Automated functional and performance testing</li>
-							<li>Deployment to a production environment upon successful validation</li>
-						</ul>
-						<p>
-							This project resulted in faster and more reliable deployments, a significant reduction in manual errors, and the ability to easily roll back to previous versions if any issue occurs.
-						</p>
-					</li>
-		
-					<li>
-						<h4><a href="https://registry.terraform.io/modules/Pradipbabar/resource-master/aws/latest"> Module for AWS </a></h4>
-						<p>
-							Engineered a Terraform module for swift provisioning of AWS services.
-						</p>
-						<ul>
-							<li>Streamlined the deployment process for resources like EC2 instances and S3 buckets.</li>
-							<li>Enhanced efficiency in managing AWS infrastructure through modularized Terraform configurations.</li>
-						</ul>
-						<p>
-							This project improved the agility of provisioning AWS resources and made the infrastructure management more modular and maintainable.
-						</p>
-					</li>
-		
-					<li>
-						<h4><a href="https://github.com/Pradipbabar/100-Days-of-Go"> Go Projects Showcase </a></h4>
-						<p>
-							Established the "Let's Go" repository as a personal project, featuring a detailed roadmap for learning the Go language tailored for streamlining day-to-day tasks in the current job context.
-						</p>
-						<ul>
-							<li>Developed two CLI applications within the repository, including one automating infrastructure and container tasks through a CLI, and another facilitating the seamless extraction and opening of applications in VS Code or IntelliJ IDEA.</li>
-							<li>Created a fully-fledged Chat Application incorporating CI/CD with Jenkins, Docker, and Kubernetes, demonstrating proficiency in deploying and managing applications in a containerized environment.</li>
-							<li>Implemented a Blog website using React for the frontend, MySQL for data storage, and Go as the backend, showcasing versatility in full-stack development with modern technologies.</li>
-						</ul>
-						<p>
-							This project showcased expertise in the Go language and demonstrated the ability to create comprehensive applications with CI/CD integration.
-						</p>
-					</li>
-		
-					<!-- Add more projects as needed -->
-		
-				</ul>
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
 
-                <h3>Personal Information</h3>
-                <ul class="info-list">
-					<li><strong>Date of Birth:</strong> 23-Aug-2001</li>
-					<li><strong>Nationality:</strong> Indian</li>
-					<li><strong>Marital Status:</strong> Single</li>
-					<li><strong>Languages Known:</strong> English, Marathi, and Hindi</li>
-					<li>
-						<strong>Parent’s Name:</strong>
-						<ul>
-							<li><strong>Father:</strong> Sanjay Babar</li>
-							<li><strong>Mother:</strong> Sunita Babar</li>
-						</ul>
-					</li>
-					<li><strong>Current Address:</strong> Hinjewadi, Pune - 411057</li>
-					<li><strong>Permanent Address:</strong> Sangola, Solapur - 413307</li>
-				</ul>
-		
-				<h3>Hobbies</h3>
-				<ul class="hobbies-list">
-					<li>Swimming</li>
-					<li>Reading</li>
-					<li>Gaming</li>
-				</ul>
-
-            </main>
-        </section>
-
-
-
-        <section id="expertise">
-            <main role="main">
-                <h3>Education</h3>
-                <p><b>DR.D.Y.PATIL A.C.S. College</b>, Pimpri, Pune
-                    <br><b>Programming Coursework:</b> Advanced Python Programming, Multimedia Web Design
-                    <br><b>Technical Skills:</b> HTML/CSS, Python, SQL, db2, rpgle, bash, shell, groovy, HCL, JSON
-                    <br><b>Software:</b> Git/GitHub, AS400, Jenkins, GitHub-Action, Terraform, Docker, Maven
-                </p>
-
-                <h3>Additional</h3>
-                <p><b>Personal Interests:</b> Music, ethical hacking, anime, learning new things, swimming, gaming,
-                    cycling</p>
-
-                <h3>Achievement</h3>
-                <p>AWS Solution Architect Associate</p>
-            </main>
-        </section>
-
-        <section id="contact">
-            <main role="main">
-                <h3>Get in Touch</h3>
-                <p align="center">You can reach me at prb5928@gmail.com</p>
-                <p align="center">Mobile no: 7498950520</p>
-                <h2>Contact Me</h2>
-                <form>
-                    <label>Name:</label>
-                    <input type="text" name="name"><br>
-                    <label>Email:</label>
-                    <input type="email" name="email"><br>
-                    <label>Message:</label>
-                    <textarea name="message"></textarea><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </main>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="social">
-                <a href="https://github.com/pradipbabar"><img src="images/github.png" height="36" width="36"
-                        alt="GitHub logo"></a>
-                <a href="https://www.linkedin.com/in/pradip-babar-7ab00b1a1/"><img src="images/linkedin.png" height="36"
-                        width="36" alt="LinkedIn logo"></a>
-            </div>
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="assets/img/about.jpg" alt="" />
         </div>
-    </footer>
+
+        <div>
+          <h2 class="about__subtitle">I'm Pradip</h2>
+          <p class="about__text">
+            A DevOps engineer fueled by an insatiable curiosity and a passion
+            for innovation. I thrive at the intersection of development and
+            operations, where I leverage my skills to streamline processes and
+            elevate team collaboration. Constantly on the lookout for new
+            tools and techniques, I embrace every opportunity to enhance my
+            expertise and drive efficiency. With a commitment to continuous
+            learning and a love for problem-solving, I aim to create robust,
+            scalable solutions that empower teams to deliver exceptional
+            results. Let’s connect and explore the future of technology
+            together!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Profesional Skills</h2>
+          <p class="skills__text">
+            Possesses a strong foundation in DevOps principles and best
+            practices, with proficiency in tools such as Terraform, GitHub
+            Actions, OpenShift, Kubernetes, and AWS. Specialized in cloud
+            infrastructure, containerization, automation, and CI/CD, enabling
+            effective streamlining of processes and enhancement of operational
+            efficiency.
+          </p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills__icon"></i>
+              <span class="skills__name">Infrastructure as Code</span>
+            </div>
+            <div class="skills__bar skills__best"></div>
+            <div>
+              <span class="skills__percentage">80%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills__icon"></i>
+              <span class="skills__name">Cloud Platforms</span>
+            </div>
+            <div class="skills__bar skills__better"></div>
+            <div>
+              <span class="skills__percentage">70%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills__icon"></i>
+              <span class="skills__name">Containerization and Orchestration</span>
+            </div>
+            <div class="skills__bar skills__better"></div>
+            <div>
+              <span class="skills__percentage">70%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills__icon"></i>
+              <span class="skills__name">Continuous Integration/Continuous Deployment</span>
+            </div>
+            <div class="skills__bar skills__good"></div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills__icon"></i>
+              <span class="skills__name">Programming Languages</span>
+            </div>
+            <div class="skills__bar skills__average"></div>
+            <div>
+              <span class="skills__percentage">50%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills__icon"></i>
+              <span class="skills__name">AI and Machine Learning</span>
+            </div>
+            <div class="skills__bar skills__average"></div>
+            <div>
+              <span class="skills__percentage">40%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills__icon"></i>
+              <span class="skills__name">Soft Skills</span>
+            </div>
+            <div class="skills__bar skills__good"></div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=pradipbabar&theme=default&show_icons=true&hide_border=false&count_private=true"
+            alt="" class="skills__img" />
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=Pradipbabar&theme=light&hide_border=false"
+            alt="" class="skills__img" />
+          <img src="https://raw.githubusercontent.com/Pradipbabar/Pradipbabar/output/github-contribution-grid-snake.svg"
+            alt="" class="skills__img" />
+        </div>
+      </div>
+    </section>
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+      <h2 class="section-title">Work</h2>
+
+      <div class="work__container bd-grid">
+        <a href="javascript:void(0)" class="work__img" id="project1">
+          <img src="assets/img/work1.jpeg" alt="Project 1" />
+        </a>
+        <a href="javascript:void(0)" class="work__img" id="project2">
+          <img src="assets/img/work2.jpeg" alt="Project 2" />
+        </a>
+        <a href="javascript:void(0)" class="work__img" id="project3">
+          <img src="assets/img/work3.jpeg" alt="Project 3" />
+        </a>
+        <a href="javascript:void(0)" class="work__img" id="project4">
+          <img src="assets/img/work4.jpeg" alt="Project 4" />
+        </a>
+        <a href="javascript:void(0)" class="work__img" id="project5">
+          <img src="assets/img/work5.jpeg" alt="Project 5" />
+        </a>
+        <a href="javascript:void(0)" class="work__img" id="project6">
+          <img src="assets/img/work6.jpeg" alt="Project 6" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Modal for Project 1: resourcesmaster -->
+    <div id="modalProject1" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modalProject1">&times;</span>
+        <h2>Project 1: Terraform AWS Resource Master</h2>
+        <p>
+          Terraform main module orchestrates the deployment of various AWS resources by leveraging the capabilities of
+          submodules.
+          The main module is designed to create and manage a wide range of AWS resources, including a VPC, EC2
+          instances, RDS databases,
+          Amazon S3 buckets, security groups, and more.
+        </p>
+        <a href="https://github.com/Pradipbabar/terraform-aws-resource-master" target="_blank">View GitHub
+          Repository</a>
+      </div>
+    </div>
+
+    <!-- Modal for Project 2: gemini-cli -->
+    <div id="modalProject2" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modalProject2">&times;</span>
+        <h2>Project 2: Gemini AI CLI</h2>
+        <p>
+          Gemini AI CLI is a command-line interface (CLI) application written in Go, powered by the Cobra package.
+          It allows you to interact with the Gemini AI API for various tasks such as configuring access keys, engaging
+          in chat conversations,
+          and generating explanations.
+        </p>
+        <a href="https://github.com/Pradipbabar/gemini-cli" target="_blank">View GitHub Repository</a>
+      </div>
+    </div>
+
+    <!-- Modal for Project 3: ecs-action -->
+    <div id="modalProject3" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modalProject3">&times;</span>
+        <h2>Project 3: ECS Action</h2>
+        <p>
+          This project contains a GitHub Action for deploying ECS infrastructure using Terraform.
+          You can use this action to automate the setup and management of your ECS infrastructure.
+        </p>
+        <a href="https://github.com/quantumci/ecs-action-test" target="_blank">View GitHub Repository</a>
+      </div>
+    </div>
+
+    <!-- Modal for Project 4: java-devops -->
+    <div id="modalProject4" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modalProject4">&times;</span>
+        <h2>Project 4: Java DevOps</h2>
+        <p>
+          Deploy Java applications integrated with Docker, GitHub Actions, Maven, and more. This project demonstrates a
+          DevOps workflow
+          to continuously deploy Java applications.
+        </p>
+        <a href="https://github.com/Pradipbabar/java-devops" target="_blank">View GitHub Repository</a>
+      </div>
+    </div>
+
+    <!-- Modal for Project 5: 100-Days-of-Go -->
+    <div id="modalProject5" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modalProject5">&times;</span>
+        <h2>Project 5: 100 Days of Go</h2>
+        <p>
+          A comprehensive journey to master the Golang programming language. This project tracks 100 days of learning
+          and applying Go
+          in various practical scenarios.
+        </p>
+        <a href="https://github.com/Pradipbabar/100-Days-of-Go" target="_blank">View GitHub Repository</a>
+      </div>
+    </div>
+
+    <!-- Modal for Project 6: PyEcho -->
+    <div id="modalProject6" class="modal">
+      <div class="modal-content">
+        <span class="close" data-modal="modalProject6">&times;</span>
+        <h2>Project 6: PyEcho</h2>
+        <p>
+          PyEcho is a comprehensive repository for mastering Python scripting, from fundamentals to advanced levels.
+          Explore OOP, API interactions, databases, web development, and data science with practical examples.
+        </p>
+        <a href="https://github.com/Pradipbabar/PyEcho" target="_blank">View GitHub Repository</a>
+      </div>
+    </div>
+
+
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact__container bd-grid">
+        <form action="" class="contact__form">
+          <input type="text" placeholder="Name" class="contact__input" />
+          <input type="mail" placeholder="Email" class="contact__input" />
+          <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+          <input type="button" value="Submit" class="contact__button button" />
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Connect</p>
+    <div class="footer__social">
+      <a href="https://www.facebook.com/pradip.babar.1481?mibextid=ZbWKwL" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/pradip.babar.13?igsh=MTFrYjJjYzlmaHNí" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+      <a href="https://x.com/pradipbabar" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      <a href="mailto:prb5928@gmail.com" class="footer__icon"><i class="bx bxl-gmail"></i></a>
+    </div>
+  </footer>
+
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--===== MAIN JS =====-->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
