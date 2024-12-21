@@ -156,4 +156,43 @@ function animateTitle() {
 
 // Start the animation
 animateTitle();
+// JavaScript to handle the form submission
+document.getElementById("submit").addEventListener("click", function () {
+  // Get form values
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  // Validate form fields
+  if (!name || !email || !message) {
+    alert("Please fill in all fields before submitting.");
+    return;
+  }
+
+  // Create a professional subject and body
+  const subject = `Request to Connect: Inquiry from ${name}`;
+  const body = `
+Dear Pradip,
+
+I hope this message finds you well. My name is ${name}, and I am reaching out to express my interest in connecting with you. Below are the details of my inquiry:
+
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}
+
+I look forward to hearing from you and discussing further opportunities to connect. Please feel free to reach out to me via email.
+
+Best regards,
+${name}
+  `.trim();
+
+  // Generate the mailto link
+  const mailtoLink = `mailto:prb5928@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  // Open the mailto link
+  window.location.href = mailtoLink;
+});
+
 

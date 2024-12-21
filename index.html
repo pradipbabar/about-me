@@ -165,6 +165,16 @@
           <div class="skills__data">
             <div class="skills__names">
               <i class="skills__icon"></i>
+              <span class="skills__name">Soft Skills</span>
+            </div>
+            <div class="skills__bar skills__good"></div>
+            <div>
+              <span class="skills__percentage">60%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="skills__icon"></i>
               <span class="skills__name">Programming Languages</span>
             </div>
             <div class="skills__bar skills__average"></div>
@@ -182,19 +192,10 @@
               <span class="skills__percentage">40%</span>
             </div>
           </div>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class="skills__icon"></i>
-              <span class="skills__name">Soft Skills</span>
-            </div>
-            <div class="skills__bar skills__good"></div>
-            <div>
-              <span class="skills__percentage">60%</span>
-            </div>
-          </div>
+
         </div>
 
-        <div>
+        <div class="git_stat">
           <img
             src="https://github-readme-stats.vercel.app/api?username=pradipbabar&theme=default&show_icons=true&hide_border=false&count_private=true"
             alt="" class="skills__img" />
@@ -319,20 +320,20 @@
 
 
 
-    <!--===== CONTACT =====-->
-    <section class="contact section" id="contact">
-      <h2 class="section-title">Contact</h2>
+<!--===== CONTACT =====-->
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
 
-      <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-          <input type="text" placeholder="Name" class="contact__input" />
-          <input type="mail" placeholder="Email" class="contact__input" />
-          <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-          <input type="button" value="Submit" class="contact__button button" />
-        </form>
-      </div>
-    </section>
-  </main>
+  <div class="contact__container bd-grid">
+    <form id="contactForm" class="contact__form">
+      <input id="name" type="text" placeholder="Name" class="contact__input" />
+      <input id="email" type="email" placeholder="Email" class="contact__input" />
+      <textarea id="message" cols="0" rows="10" placeholder="Your message" class="contact__input"></textarea>
+      <input id="submit" type="button" value="Submit" class="contact__button button" />
+    </form>
+  </div>
+</section>
+
 
   <!--===== FOOTER =====-->
   <footer class="footer">
